@@ -1,7 +1,7 @@
 h1 {
     display: flex;
     justify-content: center;
-}
+  }
 
 #board {
     background-color: aqua;
@@ -65,4 +65,21 @@ h1 {
     border: 3px solid black;
     width: 50px;
     height: 50px;
+}
+
+
+
+
+#start {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: cornflowerblue;
+    padding: 10px 20px 10px 20px;
+    background-color: lawngreen;
+}
+#btn-wrapper {
+    
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 5px 10px 5px;
 }
