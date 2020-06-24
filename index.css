@@ -93,3 +93,16 @@ h1 {
     height: 100px;
 }
 
+#start {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: cornflowerblue;
+    padding: 10px 20px 10px 20px;
+    background-color: lawngreen;
+}
+#btn-wrapper {
+    
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 5px 10px 5px;
+}
