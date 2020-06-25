@@ -1,6 +1,7 @@
 #header {
     display: flex;
     justify-content: center;
+    font-family: 'Krona One', sans-serif;
 }
 
 h1 {
@@ -11,7 +12,7 @@ h1 {
     width: auto;
     height: auto;
     font-size: 100px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: 'Krona One', sans-serif;
 }
 
 #board-container {
@@ -28,74 +29,65 @@ h1 {
     width: auto;
 }
 
+.cell {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Krona One', sans-serif;
+    
+}
+
 #box1 {
     border-right: 3px solid black;
     border-bottom: 3px solid black;
-    width: 300px;
-    height: 300px;
 }
 
 #box2 {
     border-top: 3px solid black;
     border-right: 3px solid black;
     border-bottom: 3px solid black;
-    width: 300px;
-    height: 300px;
 }
 
 #box3 {
     border-right: 3px solid black;
     border-top: 3px solid black;
-    width: 300px;
-    height: 300px;
 }
 
 #box4 {
     border-right: 3px solid black;
     border-bottom: 3px solid black; 
     border-left: 3px solid black;  
-    width: 300px;
-    height: 300px;
 }
 
 #box5 {
     border: 3px solid black;
-    width: 300px;
-    height: 300px;
 }
 
 #box6 {
     border-top: 3px solid black;
     border-left: 3px solid black;
     border-right: 3px solid black;
-    width: 300px;
-    height: 300px;
 }
 
 #box7 {
     border-left: 3px solid black;
     border-bottom: 3px solid black;
-    width: 300px;
-    height: 300px;
 }
 
 #box8 {
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     border-left: 3px solid black;
-    width: 300px;
-    height: 300px;
 }
 
 #box9 {
     border-top: 3px solid black;
     border-left: 3px solid black;
-    width: 300px;
-    height: 300px;
 }
 
 #start {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Krona One', sans-serif;
     color: cornflowerblue;
     padding: 10px 20px 10px 20px;
     background-color: lawngreen;
