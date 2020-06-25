@@ -86,11 +86,14 @@ h1 {
     border-left: 3px solid black;
 }
 
-#start {
+#start-button {
     font-family: 'Krona One', sans-serif;
     color: cornflowerblue;
     padding: 10px 20px 10px 20px;
     background-color: lawngreen;
+}
+.start-button-active {
+    background-color: darkgray !important;
 }
 
 #btn-wrapper {
@@ -98,7 +101,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin: 10px 5px 10px 5px;
-}
+} 
 
 
 
