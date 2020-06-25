@@ -1,4 +1,4 @@
-let gameArray = ['x', '', 'o', '', '', 'x', '', '', '']
+let gameArray = ['', '', '', '', '', '', '', '', '']
 
 function winTest() {
 
@@ -15,3 +15,9 @@ function drawBoard(currentBoard) {
 
 }
 
+let start = document.getElementById("start")
+let status = document.getElementById("status")
+
+start.addEventListener("click", (event) => {
+  event.disable
+})
