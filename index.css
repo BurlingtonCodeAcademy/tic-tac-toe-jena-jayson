@@ -92,10 +92,30 @@ h1 {
     padding: 10px 20px 10px 20px;
     background-color: lawngreen;
 }
+
 #btn-wrapper {
-    
     padding: 50px;
     display: flex;
     justify-content: center;
     margin: 10px 5px 10px 5px;
+}
+
+
+
+#status-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;;
+}
+
+#status {
+    border: 3px solid black;
+    width: 75%;
+    height:20px;
+
+}
+
+#form-container {
+    display: flex;
+    justify-content: center;
 }

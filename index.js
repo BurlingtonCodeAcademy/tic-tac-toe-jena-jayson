@@ -60,3 +60,9 @@ function drawBoard(currentBoard) {
 
 }
 
+let start = document.getElementById("start")
+let status = document.getElementById("status")
+
+start.addEventListener("click", (event) => {
+  event.disable
+})
