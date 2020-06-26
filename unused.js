@@ -19,6 +19,15 @@ let wins = [[1, 2, 3],[4, 5, 6], [7, 8, 9],
 //     myButton.disabled = true
 //   })
 // }
+function clearBoxes() {
+  currentBoard.forEach(async function (box, i) {
+      let boxID = 'box' + (i + 1);
+      let currentBox = document.getElementById(boxID);
+      currentBox.style.backgroundColor = 'white';
+      currentBox.removeEventListener('click');
+  })
+
+}
 
 
 playerOne = (playerOne.value === '' ? 'X' : playerOne.value);
