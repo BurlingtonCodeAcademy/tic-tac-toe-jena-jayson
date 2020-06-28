@@ -1,0 +1,191 @@
+#header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Krona One', sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: red;
+    border-bottom: 2px solid red;
+    width: auto;
+    height: auto;
+    font-size: 100px;
+    font-family: 'Krona One', sans-serif;
+}
+
+#board-container {
+    display: flex;
+    justify-content: center;
+    height: 900px;
+}
+
+#board {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: auto;
+}
+
+.cell {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Krona One', sans-serif;
+    
+}
+
+#box1 {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#box2 {
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#box3 {
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+}
+
+#box4 {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black; 
+    border-left: 3px solid black;  
+}
+
+#box5 {
+    border: 3px solid black;
+}
+
+#box6 {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#box7 {
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#box8 {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+#box9 {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+}
+
+#start-button {
+    font-family: 'Krona One', sans-serif;
+    color: cornflowerblue;
+    padding: 10px 20px 10px 20px;
+    background-color: lawngreen;
+}
+.start-button-active {
+    background-color: darkgray !important;
+}
+
+#btn-wrapper {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 5px 10px 5px;
+} 
+
+#status-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;;
+}
+
+#status {
+    border: 3px solid black;
+    width: 75%;
+    height:20px;
+
+}
+
+#form-container {
+    display: flex;
+    justify-content: center;
+}
+
+#radioForm {
+    margin-bottom: 4px;
+}
+/* all this for the radio buttons */
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
