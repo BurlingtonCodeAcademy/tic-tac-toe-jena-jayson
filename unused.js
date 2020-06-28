@@ -170,6 +170,17 @@ function drawBoard(currentBoard) {
 }
 Collapse
 
+async function gameChoice() {
+  let userGameChoice = '';
+  if (lastGamePlayed = 'x') {
+    userGameChoice = await ask('Do you want to play against')
+  } else if ( lastGamePlayed === 1) {
+    userGameChoice = 2
+  } else if (lastGamePlayed === 2) {
+    userGameChoice = 1
+  
+  };
+
 
 
 
