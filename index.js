@@ -70,11 +70,11 @@ function activateCells() {
                 emptyArray = []
                 gameArray.forEach(async function (box, i) {
                     box === '' ? emptyArray.push(i) : false;
-                  
+
                 })
 
-                let compSelection = emptyArray[Math.floor(Math.random() * emptyArray.length)] +  1;
-                $('#box'+ compSelection).click()
+                let compSelection = emptyArray[Math.floor(Math.random() * emptyArray.length)] + 1;
+                $('#box' + compSelection).click()
 
             } else {
                 player = 'X'
@@ -92,15 +92,24 @@ function winTest() {
         let testVal3 = gameArray[wins[i][2] - 1];
 
         if ((testVal1 === testVal2) && (testVal2 === testVal3) && (testVal3 != '')) {
+            alert(`Congratulations! Player ${player} wins!`)
             endGame()
+            return true
         }
 
-    }
 
+    }
+    if (!gameArray.includes('')) {
+        alert(`You tied! Try again!`)
+        startButton.disabled = false;
+        startButton.style.backgroundColor = 'lawngreen';
+        $(".cell").unbind();
+        clearInterval(interval)
+    }
 }
 
 function endGame() {
-    alert(`Congratulations! Player ${player} wins!`)
+    // alert(`Congratulations! Player ${player} wins!`)
     let winBox1 = document.getElementById('box' + wins[i][0])
     let winBox2 = document.getElementById('box' + wins[i][1])
     let winBox3 = document.getElementById('box' + wins[i][2])
