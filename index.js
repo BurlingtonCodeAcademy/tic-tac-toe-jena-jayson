@@ -30,7 +30,7 @@ function startGame() {
 
         playerX = $('#playerOne').val() || 'X'
         playerO = $('#playerTwo').val() || 'O'
-        statusBox.innerHTML = `Player ${playerX}'s turn`;
+        statusBox.innerHTML = `${playerX}'s turn`;
 
     })
 }
@@ -62,7 +62,7 @@ function activateCells() {
 
             if (player === 'X' && aiSelection === 'player') {
                 player = 'O'
-                statusBox.textContent = `Player ${playerO}'s turn`
+                statusBox.textContent = `${playerO}'s turn`
 
             } else if (player === 'X' && aiSelection === 'computer') {
 
@@ -78,11 +78,12 @@ function activateCells() {
 
             } else {
                 player = 'X'
-                statusBox.textContent = `Player ${playerX}'s turn`
+                statusBox.textContent = `${playerX}'s turn`
             }
         }
     });
 }
+
 
 
 function winTest() {
@@ -100,7 +101,7 @@ function winTest() {
 }
 
 function endGame() {
-    alert(`Congratulations! Player ${player} wins!`)
+    alert(`Congratulations! ${player} wins!`)
     let winBox1 = document.getElementById('box' + wins[i][0])
     let winBox2 = document.getElementById('box' + wins[i][1])
     let winBox3 = document.getElementById('box' + wins[i][2])
