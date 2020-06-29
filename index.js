@@ -93,9 +93,9 @@ function winTest() {
         let testVal3 = gameArray[wins[i][2] - 1];
 
         if ((testVal1 === testVal2) && (testVal2 === testVal3) && (testVal3 != '')) {
-            alert(`Congratulations! ${player} wins!`)
             endGame()
             return true
+            alert(`Congratulations! ${player} wins!`)
         }
 
 
