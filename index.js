@@ -5,13 +5,13 @@ let gameArray = ['', '', '', '', '', '', '', '', ''];
 let player = 'X';
 let playerX = '';
 let playerO = ''
-let playBot = false;
 let wins = [[1, 2, 3], [4, 5, 6], [7, 8, 9],
 [1, 4, 7], [2, 5, 8], [3, 6, 9],
 [1, 5, 9], [3, 5, 7]];
 
 
 startGame()
+//sets up clock and resets
 let interval = setInterval(tick, 1000);
 clearInterval(interval);
 
@@ -27,7 +27,6 @@ function startGame() {
         activateCells();
         seconds = 0
         interval = setInterval(tick, 1000);
-
         playerX = $('#playerOne').val() || 'X'
         playerO = $('#playerTwo').val() || 'O'
         statusBox.innerHTML = `${playerX}'s turn`;
@@ -49,8 +48,6 @@ function activateCells() {
 
         let aiSelection = $('input[type=radio]:checked').val()
 
-
-
         if (indexContent === 'X' || indexContent === 'O') {
             alert("Please select an empty cell.")
 
@@ -58,7 +55,6 @@ function activateCells() {
             gameArray[currentPlayerIndex] = player
             drawBoard(gameArray)
             winTest();
-
 
             if (player === 'X' && aiSelection === 'player') {
                 player = 'O'
@@ -93,15 +89,18 @@ function winTest() {
         let testVal3 = gameArray[wins[i][2] - 1];
 
         if ((testVal1 === testVal2) && (testVal2 === testVal3) && (testVal3 != '')) {
+            //lock in winning player and delay alert for endGame function to run
+            let winner = player;
+            setTimeout(function () { alert(`Congratulations! ${winner} wins!`); }, 1000); 
             endGame()
             return true
             alert(`Congratulations! ${player} wins!`)
         }
-
-
     }
+
+    //in the event of a tie game
     if (!gameArray.includes('')) {
-        alert(`You tied! Try again!`)
+        setTimeout(function () { alert(`You tied! Try again!`); }, 1000);
         startButton.disabled = false;
         startButton.style.backgroundColor = 'lawngreen';
         $(".cell").unbind();
@@ -110,7 +109,6 @@ function winTest() {
 }
 
 function endGame() {
-    //alert(`Congratulations! ${player} wins!`)
     let winBox1 = document.getElementById('box' + wins[i][0])
     let winBox2 = document.getElementById('box' + wins[i][1])
     let winBox3 = document.getElementById('box' + wins[i][2])

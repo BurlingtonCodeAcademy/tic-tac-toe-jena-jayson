@@ -184,7 +184,7 @@ h1 {
   }
   
   .player-container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: cornflowerblue;
   }
   
   .checkmark:after {
