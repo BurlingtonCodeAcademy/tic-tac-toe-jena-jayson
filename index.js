@@ -93,7 +93,7 @@ function winTest() {
         let testVal3 = gameArray[wins[i][2] - 1];
 
         if ((testVal1 === testVal2) && (testVal2 === testVal3) && (testVal3 != '')) {
-            alert(`Congratulations! Player ${player} wins!`)
+            alert(`Congratulations! ${player} wins!`)
             endGame()
             return true
         }
@@ -110,7 +110,7 @@ function winTest() {
 }
 
 function endGame() {
-    alert(`Congratulations! ${player} wins!`)
+    //alert(`Congratulations! ${player} wins!`)
     let winBox1 = document.getElementById('box' + wins[i][0])
     let winBox2 = document.getElementById('box' + wins[i][1])
     let winBox3 = document.getElementById('box' + wins[i][2])
