@@ -54,7 +54,10 @@ function activateCells() {
         } else {
             gameArray[currentPlayerIndex] = player
             drawBoard(gameArray)
-            winTest();
+
+            if (winTest() === true) {
+                return true
+            }
 
             if (player === 'X' && aiSelection === 'player') {
                 player = 'O'
@@ -91,7 +94,7 @@ function winTest() {
         if ((testVal1 === testVal2) && (testVal2 === testVal3) && (testVal3 != '')) {
             //lock in winning player and delay alert for endGame function to run
             let winner = player;
-            setTimeout(function () { alert(`Congratulations! ${winner} wins!`); }, 1000); 
+            setTimeout(function () { alert(`Congratulations! ${winner} wins!`); }, 1000);
             endGame()
             return true
         }
@@ -104,6 +107,8 @@ function winTest() {
         startButton.style.backgroundColor = 'lawngreen';
         $(".cell").unbind();
         clearInterval(interval)
+        statusBox.textContent = "TIE TIE TIE TIE"
+        return true
     }
 }
 
@@ -118,6 +123,7 @@ function endGame() {
     startButton.style.backgroundColor = 'lawngreen';
     $(".cell").unbind();
     clearInterval(interval)
+    statusBox.textContent = "WINNER WINNER WINNER"
 }
 
 function drawBoard(currentBoard) {
