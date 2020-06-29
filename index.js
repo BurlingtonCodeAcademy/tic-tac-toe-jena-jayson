@@ -94,7 +94,6 @@ function winTest() {
             setTimeout(function () { alert(`Congratulations! ${winner} wins!`); }, 1000); 
             endGame()
             return true
-            alert(`Congratulations! ${player} wins!`)
         }
     }
 
