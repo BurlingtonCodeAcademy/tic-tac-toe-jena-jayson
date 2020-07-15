@@ -17,16 +17,19 @@
   <div id="header">
     <h1>TIC TAC TOE!</h1>
   </div>
-  <div id="status-container">
+
+  <!-- Below is the box displaying whose turn it is to play -->
+  <div id="status-container"> 
     <form id="status">
 
     </form>
   </div>
-
+<!-- Below is the box displaying the clock -->
   <div id="clock-container">
     <div id="clock"></div>
   </div>
   <div id="board-container">
+    <!-- Below is the set up for the tic tac toe board -->
     <div id='board'>
       <div id="top-box-container">
         <div id='box1' class='cell'></div>
@@ -48,14 +51,13 @@
 
   <br>
   <br>
-
+<!-- Below is the space for players to fill in their names -->
   <div id="form-container">
     <form id=‘userform’>
       <input id="playerOne" name="name" rows="1" cols="5" type="text" placeholder="Player One" />
       
         <input id="playerTwo" name="name" rows="1" cols="5" type="text" placeholder="Player Two" />
-        
-
+        <!-- Below are the buttons where the player can choose to play against another player or the computer -->
         <form id="radioForm">
           <label class="player-container">Player VS Player
             <input type="radio" name="radio" value= "player" checked>
@@ -70,11 +72,11 @@
       
     </form>
   </div>
-
+  <!-- Below is the start button -->
   <div id="btn-wrapper">
     <button id='start-button'>START GAME</button>
   </div>
-
+<!-- script tag below imports index.js into the page -->
   <script src="index.js"></script>
 </body>
 
