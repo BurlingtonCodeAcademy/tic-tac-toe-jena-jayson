@@ -1,0 +1,210 @@
+#body {
+    display: flex;
+    justify-content: center;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Krona One', sans-serif;
+    margin-bottom: -50px;
+    margin-top: -50px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: red;
+    border-bottom: 2px solid red;
+    width: auto;
+    height: auto;
+    font-size: 100px;
+    font-family: 'Krona One', sans-serif;
+}
+
+#clock-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+}
+
+#clock {
+    border: 3px solid black;
+    width: 30%;
+    height:20px;
+    min-width: 300px; /* mobile-friendly width*/
+}
+
+#status-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+}
+
+#status {
+    border: 3px solid black;
+    width: 30%;
+    height:20px;
+    min-width: 300px; /* mobile-friendly width*/
+}
+
+
+#board-container {
+    display: flex;
+    justify-content: center;
+}
+
+#board {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Krona One', sans-serif;
+}
+
+#box1 {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#box2 {
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#box3 {
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+}
+
+#box4 {
+    border-right: 3px solid black;
+    border-bottom: 3px solid black; 
+    border-left: 3px solid black;  
+}
+
+#box5 {
+    border: 3px solid black;
+}
+
+#box6 {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#box7 {
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#box8 {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+#box9 {
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+}
+
+#form-container {
+    display: flex;
+    justify-content: center;
+}
+
+#radioForm {
+    margin-bottom: 4px;
+}
+
+#btn-wrapper {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 5px 10px 5px;
+} 
+
+#start-button {
+    font-family: 'Krona One', sans-serif;
+    color: cornflowerblue;
+    padding: 10px 20px 10px 20px;
+    background-color: lawngreen;
+}
+
+.start-button-active {
+    background-color: darkgray !important;
+}
+
+/* The container */
+
+.player-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Krona One', sans-serif;
+  }
+  
+  .player-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  .player-container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .player-container input:checked ~ .checkmark {
+    background-color: cornflowerblue;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .player-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .player-container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
